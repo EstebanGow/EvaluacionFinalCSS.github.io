@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url(../fuentes/DancingScript-Regular.ttf);
+}
+body{
+  background-color: #02010a;
+  margin: 0;
+  font-family: 'DancingScript';
+}
+
+/* estilos header */
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  flex-direction: column;
+  width: 90%;
+
+}
+header  h1 {
+ margin: 0 0 0 0;
+ font-size: 3vw;
+ text-shadow: 2px 2px 2px #02010a;
+ padding: 0 30% 0 1%;
+}
+.container1{
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul {
+list-style: none;
+}
+ ul li{
+  display: inline;
+  font-size: 1.3vw;
+  padding: 0;
+
+}
+nav ul li a{
+  color: inherit;
+}
+.sinsub {
+  text-decoration: none;
+}
+/* estilos contenido */
+.contenido1{
+  width: 90%;
+  height: 50%;
+  background-color: #82c3a6;
+  margin: 0 auto;
+  border: 1px;
+  padding-top: 1%;
+
+}
+#montanas{
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px  #02010a;
+
+}
+.contenido2{
+  background-color: #d5c75f;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+margin-bottom: 0;
+}
+
+.contenido2  figure {
+  width: 50%;
+  text-align: center;
+}
+
+figure .imagen {
+  margin: 0 auto;
+  text-align: center;
+  }
+  figure a {
+    color: black;
+  }
+
+#lago{
+  width: 60%;
+  height: 80%;
+  box-shadow: 2px 2px 2px #02010a;
+  transition: box-shadow;
+
+}
+#lago:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px  #82c3a6;
+}
+#nina{
+  width: 60%;
+  height: 80%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+#nina:hover{
+transform: translate(20px,-5px);
+box-shadow: 2px 2px 2px  #82c3a6;
+}
+ /* estilos pie de pagina */
+footer{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+}
+footer div{
+  width: 25%;
+  text-align: left;
+}
+
+.Icon{
+  float: left;
+  width: 8%;
+  padding: 0 2% 0 0;
+}
+.Contacto{
+  padding: 0 0 0 3%;
+}
+.Terminos a{
+  text-decoration: none;
+  color: black;
+    font-weight: bold;
+}
+.Contacto a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/*estilos pagina paisajes y retratos */
+.imagenes{
+  background-color: #d5c75f;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border: 0 1px 0 1px;
+  margin-bottom: 0;
+}
+.imagenes figure{
+  width: 100%;
+  text-align: center;
+
+}
+.imagenes img{
+  width: 27%;
+  margin: 0 2% 0 2%;
+}
+#sepia{
+  filter: sepia(90);
+}
+#blur{
+  filter: blur(10px);
+}
+#gris{
+  filter: grayscale(100);
+}
+
+/*animacion*/
+
+header{
+  webkit-animation-name: slidein;
+  webkit-animation-duration: 1.5s;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+/*Responsive para Pantallas con menos de 900px */
+@media screen and (max-device-width: 900px) {
+  body{
+    margin: 0 1% 0 1%;
+    width: 98%;
+  }
+  header{
+    width: 100%;
+    display: inline-block;
+  }
+  header  h1 {
+   padding: 0 0 0 4%;
+   font-size: 11vw;
+}
+  .container1 {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: 0;
+ }
+
+ ul li{
+   font-size: 6vw;
+   }
+
+ .contenido1{
+   width: 100%;
+}
+ #montanas{
+   width: 80%;
+ }
+ .contenido2{
+   flex-flow: column;
+   width: 100%;
+   margin:  0 auto;
+  }
+
+.contenido2 figure{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+   padding-top: 2%;
+}
+
+ #nina{
+width: 80%;
+margin: 0 auto;
+ }
+#lago{
+  width: 80%;
+  margin: 0 auto;
+}
+footer{
+ flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+footer div{
+width: 60%;
+}
+.Contacto{
+  padding: 0 0 0 0;
+}
+.Icon{
+  width: 10%;
+}
+.imagenes{
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.imagenes figure{
+  width: 100%;
+  margin: 0 auto;
+}
+.imagenes img{
+  width: 80%;
+  padding-top: 3%;
+}
+
+}
+
+@media screen and (min-device-width: 900px) {
+  header{
+    width: 90%;
+  }
+body{
+  width: 90%;
+  margin: 0 auto;
+}
+
+}
